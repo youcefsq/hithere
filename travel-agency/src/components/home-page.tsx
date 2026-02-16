@@ -616,7 +616,9 @@ export default function HomePage() {
                     <Star key={`${item.id}-star-${starIndex}`} className="h-4 w-4 fill-current" />
                   ))}
                 </div>
-                <p className="text-sm leading-7 text-slate-700">"{item.quote}"</p>
+                <p className="text-sm leading-7 text-slate-700">
+                  &ldquo;{item.quote}&rdquo;
+                </p>
                 <div className="mt-4 border-t border-slate-100 pt-3">
                   <p className="font-bold text-slate-900">{item.name}</p>
                   <p className="text-xs text-slate-500">{item.trip}</p>
